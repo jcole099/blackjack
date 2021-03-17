@@ -1,5 +1,7 @@
 Author: James Cole
+
 Date: September 16, 2020
+
 Description: A small blackjack game
 
 Rules:
