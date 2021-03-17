@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>James' Wild West Blackjack</title>
+    </head>
+
+    <body>
+        <div class="gameover">
+            <div class="gameoverBox">
+                <div class="gameoverText">GAME OVER
+                </div>
+                <div class="button" id="newgame">New Game?
+                </div>
+            </div>
+        </div>
+        <div class="playscreen">
+            <div class="game-message"><div class="the-message">PLAYER BUSTS</div></div>
+            <div class="row">
+                <div class="playing-area">
+                    <div class="dealer-area">
+                        <h2>DEALER</h2>
+                        <div class="card-area dealer-card-area">
+                            <img src="img/zcard_back.png" alt="Back of card" class="main-cards" id="dealer-card-1">
+                            <img src="img/zcard_back.png" alt="Back of card" class="main-cards" id="dealer-card-2">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-3">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-4">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-5">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-6">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-7">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-8">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-9">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-10">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-11">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-12">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-13">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-14">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-15">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-16">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-17">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-18">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-19">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="dealer-card-20">
+                        </div>
+                        <h3 class="scores">Count: <span id="dealer-score">0</span></h3>
+                    </div>
+                    
+                    
+                    <div class="money-box">
+                        <div class="bank-box">
+                            Bank:<br><br>$<span id="bank" class="money">150</span><br><br>
+                        </div>
+                        <div class="wager-box">
+                            Wager:<br><br>
+                            <div class="up-arrow"></div>
+                            <div class="wager-text">
+                                $<span id="wager" class="money">10</span>
+                            </div>
+                            <div class="down-arrow"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="player-area">
+                        <h2>PLAYER</h2>
+                        <div class="card-area player-card-area">        
+                            <img src="img/zcard_back.png" alt="Back of card" class="main-cards" id="player-card-1">
+                            <img src="img/zcard_back.png" alt="Back of card" class="main-cards" id="player-card-2">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-3">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-4">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-5">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-6">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-7">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-8">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-9">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-10">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-11">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-12">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-13">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-14">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-15">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-16">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-17">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-18">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-19">
+                            <img src="img/zcard_back.png" alt="Back of card" class="cards" id="player-card-20">
+                        </div>
+                        <h3 class="scores">Count: <span id="player-score">0</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="controlpanel">
+                <div class="controls">
+                    <div class="button" id="deal">DEAL</div>
+                    <div class="button" id="double">DOUBLE</div>
+                    <div class="button" id="hit">HIT</div>
+                    <div class="button" id="stand">STAND</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script src="script.js">
+    </script>
+</html>
